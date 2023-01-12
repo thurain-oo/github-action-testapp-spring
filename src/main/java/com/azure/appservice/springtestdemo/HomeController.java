@@ -8,10 +8,10 @@ import com.google.common.base.Joiner;
 @RestController
 public class HomeController {
     
-    @GetMapping("/")
+    @GetMapping("/home")
     public String home() {
         // Use the Guava library as an example of an external dependency.
         Joiner joiner = Joiner.on(" ").skipNulls(); 
-        return joiner.join('<a href="https://apithurain.azurewebsites.net">Click here <a/>', null, "from", "Spring", "Boot");
+        return joiner.join("<a href='https://apithurain.azurewebsites.net'>Click here <a/>", null, "from", "Spring", "Boot");
     }
 }
