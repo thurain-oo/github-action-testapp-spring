@@ -12,6 +12,6 @@ public class HomeController {
     public String home() {
         // Use the Guava library as an example of an external dependency.
         Joiner joiner = Joiner.on(" ").skipNulls(); 
-        return joiner.join("<a href=\"https://apithurain.azurewebsites.net\" >http://abcd.efg.com</a>", null, "from", "Spring", "Boot");
+        return joiner.join("<a href='https://apithurain.azurewebsites.net' >http://abcd.efg.com</a>", null, "from", "Spring", "Boot");
     }
 }
